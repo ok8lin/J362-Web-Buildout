@@ -1,0 +1,133 @@
+
+
+/*Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap*/
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway:ital,wght@0,300;1,300&family=Source+Serif+Pro:wght@300&display=swap');
+
+p, .lead {
+  font-family: 'Raleway', sans-sans-serif;
+	font-weight: 400;
+}
+
+nav, h4, .byline, .sidebar, .maphead, .source, li, figcaption {
+font-family: 'Raleway', sans-serif;
+}
+
+.sidebar {
+  font-family: 'Source Serif Pro', serif;
+}
+
+
+h1 {
+  font-family: 'Montserrat', cursive;
+}
+
+body {
+  padding-top: 5rem;
+  line-height: 2rem;
+  background-size: cover;
+  background-image: linear-gradient(#8FAB83, #1D6896, #4B5247);
+}
+
+article {
+  width: 95%;
+  text-align: left;
+  background-color: #D6E5D0;
+  padding: 3rem;
+  margin:2rem;
+}
+
+.intro {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5em;
+	font-weight: 700;
+  color: #1D6896;
+}
+
+.byline {
+  font-weight: 700;
+}
+
+.sidebar {
+  font-size: .9em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+  margin-bottom: .5em;
+}
+
+.maphead, h4 {
+  font-family: 'Montserrat', serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #1D6896;
+}
+
+figcaption {
+text-align: left;
+margin-top: .25em;
+margin-bottom: 1em;
+line-height: 1.5rem;
+}
+
+.card {
+  float: left;
+  font-family: "Raleway", sans-serif;
+  margin-right: 2em;
+}
+.card-title {
+  font-weight: 700;
+}
+
+q {
+  line-height: 2rem;
+}
+
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+li.list {
+  counter-increment: my-awesome-counter;
+  margin: 0.25rem;
+}
+li.list:before {
+  content: counter(my-awesome-counter);
+  background: #8FAB83;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+
+
+/*STARTS MEDIA QUERIES FOR OTHER SCREEN WIDTHS*/
+
+/*Small devices (landscape phones, 576px and up*/
+@media (min-width: 576px) {
+h1 {
+  font-size: 2.5em
+}
+}
+/* Medium devices (tablets, 768px and up*/
+@media (min-width: 768px) {
+}
+
+/*Large devices (desktops, 992px and up*/
+@media (min-width: 992px) {
+h1 {
+  font-size: 3.0em
+}
+}
